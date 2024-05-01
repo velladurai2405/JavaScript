@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <script>
+            // function fn1()
+            // {
+            //     var str=document.getElementById("name").value;
+            //     alert(str);
+            // }
+
+            // function fn1(){
+            //     var Gender1=document.getElementById("gender1");
+            //     var Gender2=document.getElementById("gender2");
+
+            //     if(Gender1.checked==true)
+            //     {
+            //         alert(Gender1.value);
+            //     }
+            //     else if(Gender2.checked==true)
+            //     {
+            //         alert(Gender2.value);
+
+            //     }
+            // }
+            function fn1()
+            {
+                var select=document.getElementById("selectbox");
+                alert(select.options[select.selectedIndex].value)
+            }
+        </script>
+
+    </head>
+    <body>
+        <!-- <input type="text" id="name" placeholder="name"> <br>
+        <button onclick="fn1()" id="btn1">Click me</button> -->
+<!-- 
+        <input type="radio" id="gender1" name="Gender" value="male">Male<br>
+        <input type="radio" id="gender2" name="Gender" value="female">Female<br>
+        <input type="radio" id="gender3" name="Gender" value="notdisclose">Not wish to Disclose<br>
+        <button onclick="fn1()" id="btn1">Click me</button> -->
+
+        <select id="selectbox">
+            <option value="simple snipets">simple snipets</option>
+            <option value="telusko">telusko</option>
+        </select>
+        <button onclick="fn1()" id="btn1">Click me</button>
+    </body>
+</html>
